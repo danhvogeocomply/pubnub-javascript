@@ -1,4 +1,4 @@
-import CborReader from 'cbor-sync';
+import CborReader from 'cbor';
 import PubNubCore from '../core/pubnub-common';
 import Networking from '../networking';
 import Cbor from '../cbor/common';

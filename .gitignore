@@ -22,3 +22,4 @@ upload
 release-artifacts-*
 
 .vscode
+lib/*

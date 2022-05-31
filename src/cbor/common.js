@@ -19,7 +19,6 @@ export default class {
 
     const cleaned = tokenString.replace(/-/gi, '+').replace(/_/gi, '/') + padding;
     const result = this._decode(this._base64ToBinary(cleaned));
-
     if (typeof result === 'object') {
       return result;
     }
