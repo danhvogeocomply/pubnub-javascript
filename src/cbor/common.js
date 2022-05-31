@@ -1,11 +1,13 @@
+import CborFactory from './cbor-reader.factory';
+
 export default class {
   _base64ToBinary;
 
   _cborReader;
 
-  constructor(decode, base64ToBinary) {
-    this._base64ToBinary = base64ToBinary;
-    this._decode = decode;
+  constructor(decode) {
+    this._base64ToBinary = CborFactory.base64ToBinary;
+    this._decode = decode || CborFactory.decode;
   }
 
   decodeToken(tokenString) {
@@ -20,6 +22,7 @@ export default class {
     const cleaned = tokenString.replace(/-/gi, '+').replace(/_/gi, '/') + padding;
     const result = this._decode(this._base64ToBinary(cleaned));
     if (typeof result === 'object') {
+      if (typeof result.sig) result.sig = Buffer.from(result.sig);
       return result;
     }
 

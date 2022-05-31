@@ -1,4 +1,3 @@
-import CborReader from 'cbor';
 import PubNubCore from '../core/pubnub-common';
 import Networking from '../networking';
 import Cbor from '../cbor/common';
@@ -10,7 +9,7 @@ import PubNubFile from '../file/modules/node';
 
 export = class extends PubNubCore {
   constructor(setup: any) {
-    setup.cbor = new Cbor(CborReader.decode, (base64String: string) => Buffer.from(base64String, 'base64'));
+    setup.cbor = new Cbor();
     setup.networking = new Networking({
       keepAlive,
       del,

@@ -1,4 +1,4 @@
-spec: test/**/*.test.{ts,js}
+spec: test/**/token_manager.test.{ts,js}
 require: test/setup.js
 exclude:
   - test/dist/*.js

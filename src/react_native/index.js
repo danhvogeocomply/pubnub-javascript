@@ -1,4 +1,3 @@
-import CborReader from 'cbor';
 import { Buffer } from 'buffer';
 import PubNubCore from '../core/pubnub-common';
 import Networking from '../networking';
@@ -12,7 +11,7 @@ global.Buffer = global.Buffer || Buffer;
 
 export default class extends PubNubCore {
   constructor(setup) {
-    setup.cbor = new Cbor(CborReader.decode, (base64String) => Buffer.from(base64String, 'base64'));
+    setup.cbor = new Cbor();
 
     setup.PubNubFile = PubNubFile;
 

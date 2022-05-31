@@ -9,7 +9,7 @@
     "build:node": "tsc -p tsconfig.json",
     "test": "npm run test:web && npm run test:node",
     "test:web": "karma start ./karma/web.config.js",
-    "test:node": "ts-mocha -p tsconfig.mocha.json --config .mocharc.yml",
+    "test:node": "ts-mocha -p tsconfig.mocha.json --config .mocharc.yml --no-cached",
     "clean": "rimraf lib dist upload",
     "lint": "eslint \"src/**/*\" --config .eslintrc.js",
     "ci": "npm run clean && npm run build && npm run lint && npm run test",
@@ -48,9 +48,7 @@
   "dependencies": {
     "agentkeepalive": "^3.5.2",
     "buffer": "^6.0.3",
-    "cbor": "^8.1.0",
     "cbor-js": "^0.1.0",
-    "cbor-sync": "^1.0.4",
     "lil-uuid": "^0.1.1",
     "superagent": "^6.1.0",
     "superagent-proxy": "^3.0.0"
