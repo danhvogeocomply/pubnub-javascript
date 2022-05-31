@@ -1,4 +1,4 @@
-import CborFactory from './cbor-reader.factory';
+import CborFactory from './cbor-factory';
 
 export default class {
   _base64ToBinary;

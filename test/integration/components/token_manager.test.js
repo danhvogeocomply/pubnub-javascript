@@ -23,7 +23,7 @@ describe('#components/token_manager', () => {
     });
 
     it('contains correct permissions', () => {
-      let tokenWithAll = 'p0F2AkF0GmEK-4NDdHRsGDxDcmVzpURjaGFuoWhjaGFubmVsMQFDZ3JwoWZncm91cDEBQ3VzcqBDc3BjoER1dWlkoWV1c2VyMQFDcGF0pURjaGFuoWIuKgFDZ3JwoWIuKgFDdXNyoENzcGOgRHV1aWShYi4qAURtZXRhoENzaWdYII5bQpWLi6Z-l5jbShWxZ7QL6o8Dz6_vxluhxrMGzQCN';
+      const tokenWithAll = 'p0F2AkF0GmEK-4NDdHRsGDxDcmVzpURjaGFuoWhjaGFubmVsMQFDZ3JwoWZncm91cDEBQ3VzcqBDc3BjoER1dWlkoWV1c2VyMQFDcGF0pURjaGFuoWIuKgFDZ3JwoWIuKgFDdXNyoENzcGOgRHV1aWShYi4qAURtZXRhoENzaWdYII5bQpWLi6Z-l5jbShWxZ7QL6o8Dz6_vxluhxrMGzQCN';
       let permissions = pubnub.parseToken(tokenWithAll);
 
       assert(permissions.version === 2);
