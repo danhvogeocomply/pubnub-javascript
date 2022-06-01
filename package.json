@@ -1,6 +1,6 @@
 {
-  "name": "@danhvogeocomly/pubnub",
-  "version": "7.0.1",
+  "name": "@danhvogeocomply/pubnub-javascript",
+  "version": "7.0.2",
   "author": "PubNub <support@pubnub.com>",
   "description": "Publish & Subscribe Real-time Messaging with PubNub",
   "scripts": {
@@ -32,7 +32,7 @@
   "browser": "./dist/web/pubnub.min.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com:danhvogeocomply/pubnub-javascript.git"
+    "url": "git://github.com/danhvogeocomply/pubnub-javascript.git"
   },
   "keywords": [
     "cloud",
@@ -99,5 +99,13 @@
   "license": "MIT",
   "engine": {
     "node": ">=0.8"
+  },
+  "bugs": {
+    "url": "https://github.com/danhvogeocomply/pubnub-javascript/issues"
+  },
+  "homepage": "https://github.com/danhvogeocomply/pubnub-javascript#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
