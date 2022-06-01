@@ -1,5 +1,5 @@
 {
-  "name": "pubnub",
+  "name": "@geocomply/pubnub",
   "version": "7.0.1",
   "author": "PubNub <support@pubnub.com>",
   "description": "Publish & Subscribe Real-time Messaging with PubNub",
